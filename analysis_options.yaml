@@ -1,0 +1,20 @@
+include: package:flutter_lints/flutter.yaml
+
+# OLMAZSA OLMAZ ANALIZ KURALLARIMIZ.
+# Lütfen bu şekilde bırakın, kullanın!
+
+analyzer:
+  errors:
+    file_names: error
+    always_use_package_imports: error
+    prefer_single_quotes: error
+
+linter:
+  rules:
+    always_use_package_imports: true
+    require_trailing_commas: true
+    prefer_single_quotes: true
+    avoid_print: true
+    prefer_const_constructors: false
+    prefer_const_constructors_in_immutables: false
+    prefer_const_literals_to_create_immutables: false
