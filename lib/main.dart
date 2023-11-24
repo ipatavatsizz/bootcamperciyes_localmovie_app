@@ -1,4 +1,5 @@
 import 'package:bootcamperciyes_localmovie_app/feature/home/home_view.dart';
+import 'package:bootcamperciyes_localmovie_app/product/theme/color_schemes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -14,6 +15,15 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        colorScheme: lightColorScheme,
+        textTheme: GoogleFonts.poppinsTextTheme(),
+        appBarTheme: AppBarTheme(
+          elevation: 0,
+          scrolledUnderElevation: 0,
+        ),
+      ),
+      darkTheme: ThemeData(
+        colorScheme: darkColorScheme,
         textTheme: GoogleFonts.poppinsTextTheme(),
         appBarTheme: AppBarTheme(
           elevation: 0,

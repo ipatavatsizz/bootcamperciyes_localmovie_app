@@ -9,9 +9,10 @@ class MovieAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       title: Text('MovieDB'),
-      titleTextStyle: Theme.of(context).textTheme.headlineLarge?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+      titleTextStyle: Theme.of(context)
+          .textTheme
+          .headlineLarge
+          ?.copyWith(fontWeight: FontWeight.bold),
       toolbarHeight: toolbarHeight,
     );
   }

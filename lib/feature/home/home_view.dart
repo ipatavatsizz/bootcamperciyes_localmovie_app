@@ -30,6 +30,7 @@ class _HomeViewState extends State<HomeView> {
                   behavior:
                       MaterialScrollBehavior().copyWith(overscroll: false),
                   child: GridView.count(
+                    padding: EdgeInsets.all(5),
                     crossAxisCount: 2,
                     childAspectRatio: MediaQuery.sizeOf(context).aspectRatio,
                     children: movies.map((data) => MovieCard(data)).toList(),

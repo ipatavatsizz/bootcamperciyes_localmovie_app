@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:developer';
 
 import 'package:bootcamperciyes_localmovie_app/product/model/response_model.dart';
 import 'package:http/http.dart' as http;
@@ -11,7 +10,6 @@ class ApiService {
     if (response.statusCode != 200) return null;
 
     final data = Response.fromJson(jsonDecode(response.body));
-    inspect(data);
     return data;
   }
 }
